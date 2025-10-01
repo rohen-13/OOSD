@@ -1,9 +1,10 @@
-public class HotelRoom 
+package lab2_q1;
+public class HotelRoomQ1
 {
     private int roomNumber;
     private String roomType;
 
-    public HotelRoom()
+    public HotelRoomQ1()
     {
         setRoomNumber(0);
         setRoomType("");

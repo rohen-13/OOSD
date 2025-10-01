@@ -1,18 +1,17 @@
-public class HotelRoom 
+package lab2_q3;
+public class HotelRoomQ3
 {
     private int roomNumber;
     private String roomType;
-    private boolean roomStatus;
+    private int roomStatus;
     private double rate;
 
-    public HotelRoom()
+    public HotelRoomQ3()
     {
         setRoomNumber(0);
         setRoomType("");
-        setRoomStatus(false);
-        setRate(0);
     }
-    public HotelRoom(int roomNumber, String roomType, boolean roomStatus, double rate)
+    public HotelRoomQ3(int roomNumber, String roomType, int roomStatus, double rate)
     {
         setRoomNumber(roomNumber);
         setRoomType(roomType);
@@ -37,11 +36,11 @@ public class HotelRoom
     {
         this.roomType = roomType;
     }
-    public boolean getRoomStatus()
+    public int getRoomStatus()
     {
         return roomStatus;
     }
-    public void setRoomStatus(boolean roomStatus)
+    public void setRoomStatus(int roomStatus)
     {
         this.roomStatus = roomStatus;
     }
@@ -53,19 +52,6 @@ public class HotelRoom
     {
         this.rate = rate;
     }
-
-    public boolean isOccupied()
-    {   
-        if (roomStatus)
-        {
-            return true;   
-        }
-        else
-        {
-            return false;
-        }
-    }
-
     public String toString()
     {
         return "RoomNo. : " + roomNumber + "\tRoom Type: " + roomType + "\tRoom Status: " + roomStatus + "\tRoom Rate: " + rate;

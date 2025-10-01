@@ -1,27 +1,24 @@
-
-public class HotelDriver
+package lab2_q2;
+public class HotelDriverQ2
 {
     public static void main(String[] args) 
     {
-        HotelRoom roomA = new  HotelRoom();
+        HotelRoomQ2 roomA = new  HotelRoomQ2();
 
         roomA.setRoomNumber(200);
         roomA.setRoomType("Single");
         roomA.setRate(100);
         roomA.setRoomStatus(1);
 
-        HotelRoom roomB = new HotelRoom();
+        HotelRoomQ2 roomB = new HotelRoomQ2();
 
         roomB.setRoomNumber(201);
         roomB.setRoomType("Double");
         roomB.setRate(80);
         roomB.setRoomStatus(0);
 
-        HotelRoom roomC = new HotelRoom(202,"Single",0,90);
-
         System.out.println(roomA);
         System.out.println(roomB);
-        System.out.println(roomC);
     }
 }
     

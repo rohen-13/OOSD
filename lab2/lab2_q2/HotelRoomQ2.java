@@ -1,23 +1,16 @@
-public class HotelRoom 
+package lab2_q2;
+public class HotelRoomQ2
 {
     private int roomNumber;
     private String roomType;
     private int roomStatus;
     private double rate;
 
-    public HotelRoom()
+    public HotelRoomQ2()
     {
         setRoomNumber(0);
         setRoomType("");
     }
-    public HotelRoom(int roomNumber, String roomType, int roomStatus, double rate)
-    {
-        setRoomNumber(roomNumber);
-        setRoomType(roomType);
-        setRoomStatus(roomStatus);
-        setRate(rate);
-    }
-
 
     public int getRoomNumber()
     {
